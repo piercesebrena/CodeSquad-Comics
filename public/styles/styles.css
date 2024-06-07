@@ -1,0 +1,384 @@
+/* Teal: #006B6B */
+/* Light Teal: #009E9E */
+/* Yellow: #FCCF14 */
+/* Blue: #063C5E */
+/* Grey: #C2C2C2 */
+
+:root {
+    --teal: #006B6B;
+    --light-teal: #009E9E;
+    --yellow: #FCCF14;
+    --blue: #063C5E;
+    /*var(--blue)*/
+    --gray: #C2C2C2;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    overflow-x: hidden; 
+    /* moved up due to cascading */
+    background: linear-gradient(var(--white), var(--light-teal), var(--teal));
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1,h2,h3 {
+    /* font: size 16px;   */
+    color: var(--blue);
+    text-align: center;
+   
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Fredericka the Great', cursive;  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.yellow-button {
+    width: auto;
+    padding: .2em .4em; 
+    background-color: var(--yellow);
+    border: 2px solid;
+    /* border-radius: 0px; */
+    color: var(--black);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.delete-button {
+    border: 2px solid;
+    width: auto;
+    padding: .2em .4em; 
+    background-color: var(--yellow);
+    /* border-radius: 0px; */
+    color: var(--black);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.edit-button {
+    width: auto;
+    padding: .2em .4em; 
+    background-color: var(--blue);
+    border: none;
+    /* border-radius: 0px; */
+    color: var(--white);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+form {
+    width: auto;
+    margin: 20px auto;
+    padding: 25px;   
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #063C5E;
+    border-radius: 1px;
+    border-color: #000000 1px;
+}
+/* Anything above this line DON'T TOUCH!!!!!!!! */
+
+/* Form media Queries */
+@media  screen and (min-width:320px) and (max-width:768px) {
+    /*I suggest you test how the form looks at a width of 100px.Apply the css to the different components of the form */
+}
+
+
+/* Nav bar */
+.nav-container{
+    background-color: #063C5E;
+    color: #FFFFFF;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Link for nav */
+.nav-container a {
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+
+.nav-container ul{
+    list-style-type:  none;
+}
+
+.nav-container li{
+    list-style-type:  none;
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+ }  
+ 
+ /* nav bar media queries */
+ @media  screen and (min-width:320px) and (max-width:768px) {
+    .nav-container ul{
+        display: none;     
+    }
+    .nav-container {
+        display: block;
+    }
+}
+
+/* box{
+    background-color: #063C5E;
+    width: 400px;
+    
+    margin: 300px;
+    border: 10px solid black;
+    padding: 100px;
+} */
+.lumberjanes{
+    color: #FCCF14;
+    font-weight: bold;
+    text-align: center;
+}
+/* Putting the image in a box. */
+.image-details {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    align-items: center;
+    border: 5px solid #000000;
+    border-radius: 36px 36px 0 0;
+    border-color: #FCCF14;
+    height: 605px;
+    box-sizing: border-box;
+    padding: 24px;  
+    background-color: #063C5E;
+}
+/* Push all of the comic text in a mini box */
+.comic-details {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    align-items: center;
+    border: 5px solid #000000;
+    border-radius: 0 0 12px 12px;
+    /* Top left bottom right */
+    border-color: #FCCF14;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 24px;  
+}
+/* class of blue text with a color of blue and an underline. */
+.blue-text{
+    color: #063C5E;
+    text-decoration: underline;
+}
+/* Images styling */
+.card-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    align-items: center;
+    border: 5px solid #FFFFFF;
+    border-radius: 24px;
+    border-color: #FFFFFF;
+    height: 500px;
+    box-sizing: border-box;
+}
+.index-images{
+    width: 200px;
+    height: auto;
+} 
+
+.footer-logo{
+    width: 150px;
+    height: auto;
+}
+
+.logo{
+    width: 300px;
+    height: auto;
+}
+
+/*.container {
+    max-width: 100px;
+    margin: 0 auto;
+    margin-top: 12vh;
+} 
+*/
+
+
+.card{
+    background-color:#063C5E;
+    padding: 12px;
+    flex-direction: column;
+
+    border-radius: 12px;
+    border: 1px solid #FCCF14;
+    
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-top: 12px;
+}
+
+
+.content-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    align-items: center;
+    border: 5px solid #000000;
+    border-radius: 0px 0px 0px 0px;
+    border-color: #063C5E;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding: 30px; 
+}
+
+/* clean up content-box */
+.index-box {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    align-items: center;
+    /* border: 5px solid #000000; */
+    /* border-radius: 0px 0px 0px 0px; */
+    /* border-color: #063C5E; */
+    height: auto;
+    /* background-color: #FFFFFF; */
+    /* padding: 30px;  */
+}
+
+/* about text adjustments */
+.about-text {
+    font-size: 16px; /* Set font size for paragraphs */
+    color: #333; /* Set color for paragraphs */
+    line-height: 1.6; /* Set line height for paragraphs */
+}
+
+.page-container {
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.text-box {
+    border: 2px solid yellow;
+    padding: 20px;
+    background-color: white;
+}
+
+.white-text {
+    color: var(--white)
+}
+
+.black-text{
+    color: var(--black)
+}
+/* admin */
+table{
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border: 2px solid var(--blue);
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+table th,td {
+    padding: 1rem;
+    border: 2px solid var(--blue);
+}
+
+tr {
+    height: 50px;
+
+}
+
+/* th{
+    background: hsl(#bbbbbb 0% /.5);
+} */
+tr:nth-child(even) {
+    background-color:#bbbbbb;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Comic card media queries */
+@media screen and (min-width:1024px) {
+    /* See how the comic card looks on super big screens */
+}
+/* Footer */
+.footer-container{
+    background-color: #063C5E;
+    color: #FFFFFF;
+    width: 100%;
+    height: 50%;
+    border-top: 5px solid #FCCF14;  
+    display: flex;
+    justify-content: space-between;
+}
+ 
+
+/* Link for nav */
+.footer-container a {
+    color: #FFFFFF;
+}
+
+.footer-container ul{
+    list-style-type:  none;
+}
+
+.footer-text{
+    font: size 16px;  
+    color: #FFFFFF;
+}
+
+.footer-container li{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* footer media queries */
+@media  screen and (min-width:320px) and (max-width:768px) {
+    .footer-container{
+        flex-direction: column;
+    }    
+}

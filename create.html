@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
+</head>
+
+<body>
+    <header>
+    
+        <!-- Start nav -->
+    <nav class="nav-container">
+        <a href="index.html">
+        <img src="./public/images/CodeSquad-Comics-logo.png" alt="codesquad comics logo" class="logo"></img>   
+        </a>
+        <!-- Hamburger menu -->
+       <div>
+        <a href="javascript:void(0);" class="nav-menu-icon"><i class="fa fa-bars"></i></a>
+       </div>
+       
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+    </nav>
+     
+</header>
+     
+<div class="content-box">
+    
+    <h1>CREATE NEW COMIC</h1>
+
+    <form action="#">
+        
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" value="Title" placeholder="Enter the title">
+
+        <br>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" value="Author" placeholder="Enter the author">
+
+        <br>
+
+        <label for="publisher">Publisher:</label>
+        <select id="publisher" name="publisher" onchange="toggleInput()">
+            <option>Select</option>
+            <option value="BOOM! Box">BOOM! Box</option>
+            <option value="DC Comics">DC Comics</option>
+            <option value="Harry N. Abrams">Harry N. Abrams</option>
+            <option value="Icon Books">Icon Books</option>
+            <option value="Image Comics">Image Comics</option>
+            <option value="Marvel">Marvel</option>
+            <option value="Simon & Schuster">Simon & Schuster</option>
+            <option value="Top Shelf Productions">Top Shelf Productions</option>
+            <option value="VIZ Media LLC">VIZ Media LLC</option>
+
+        </select> 
+
+       
+
+        <br>
+
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" value="Genre" placeholder="Genre">
+    
+            <br>
+    
+            
+        <label for="pages">Number of Pages:</label>
+        <input type="text" id="pages" name="pages" value="Number of pages" placeholder="Number of pages">
+    
+            <br>
+    
+            
+        <label for="rating">Rating:</label>
+        <input type="text" id="rating" name="rating" size="3">
+    
+            <br>
+    
+            
+        <label for="synopsis">Synopsis:</label>
+        <textarea id="synopsis" name="synopsis" placeholder="Enter the synopsis">Synopsis</textarea>
+    
+            <br>
+    
+            
+        <button class="yellow-button" type="submit">Submit</button>
+        </form>
+
+</div>
+
+<footer class="footer-container">
+    <div>
+        <h3 class="white-text">VISIT US</h3>
+        <p class="footer-text">CodeSquad Comics</p>
+        <p class="footer-text">123 Dorchester Ave</p>
+        <p class="footer-text">Boston,MA 02124</p>
+        
+    
+    </div>
+   <div>
+    
+    <h4 class="white-text"><strong>LINKS</strong></h4>
+    <ul>
+        <li><a href ="index.html">HOME</a></li>
+        <li><a href ="about.html">ABOUT</a></li>
+        <li><a href ="login.html">LOGIN</a></li>
+   </ul>
+
+   </div>
+   <div>
+    <h3 class="white-text">Follow Us</h3>
+    <ul>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </ul>
+   </div>
+   
+    <div>
+        <h3 class="white-text"><strong>A PRODUCT OF</strong></h3>
+    <a href="http://codesquad.org/" target="_blank">
+    <img src="./public/images/CodeSquad-logo-b.png" alt="CodeSquad Footer Logo" class="footer-logo"></a>   
+    </div>
+   
+
+</footer>    
+</html>
